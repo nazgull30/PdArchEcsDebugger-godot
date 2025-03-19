@@ -1,3 +1,4 @@
+#if TOOLS
 namespace ArchEntityDebugger;
 
 using Godot;
@@ -19,3 +20,4 @@ public partial class ArchEcsDebuggerPlugin : EditorPlugin
     }
 
 }
+#endif

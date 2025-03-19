@@ -1,3 +1,4 @@
+#if TOOLS
 namespace ArchEntityDebugger;
 
 using System.Text.Json;
@@ -50,3 +51,4 @@ public partial class Debugger : EditorDebuggerPlugin
         return false;
     }
 }
+#endif
