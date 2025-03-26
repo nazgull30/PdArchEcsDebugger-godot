@@ -44,7 +44,7 @@ public partial class EntityDebugger : Control
     /// </summary>
     public void SetWorld(int index)
     {
-        if (index > 0 && index < _worlds.Length)
+        if (index >= 0 && index < _worlds.Length)
         {
             worldOptions.CurrentTab = index;
             selectedEntity = null;
@@ -186,7 +186,6 @@ public partial class EntityDebugger : Control
     {
         entityListTree.Clear();
         archetypeItems.Clear();
-        entityItems.Clear();
         categoryItems.Clear();
     }
 
@@ -296,14 +295,6 @@ public partial class EntityDebugger : Control
                     archetypeItem.GetChild(i).Free();
                 }
             }
-        }
-
-        toRemove.AddRange(entityItems.Keys.Except(currentEntities));
-        foreach (string key in toRemove)
-        {
-            TreeItem parentArchetypeItem = entityItems[key].GetParent();
-            entityItems[key].Free();
-            entityItems.Remove(key);
         }
 
         currentEntities.Clear();
