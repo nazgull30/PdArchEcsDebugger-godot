@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c81vscipn0b63"]
 
-[ext_resource type="Script" path="res://addons/arch_entity_debugger/Scripts/ArchEntityDebuggerRuntime.cs" id="1_jxhk7"]
-[ext_resource type="Script" path="res://Src/EntryPoint.cs" id="2_35a8q"]
+[ext_resource type="Script" uid="uid://dl062w0abin3r" path="res://addons/arch_entity_debugger/Scripts/ArchEntityDebuggerRuntime.cs" id="1_jxhk7"]
+[ext_resource type="Script" uid="uid://bwrvbsc6yinov" path="res://Src/EntryPoint.cs" id="2_35a8q"]
 
 [node name="Main" type="Node3D"]
 

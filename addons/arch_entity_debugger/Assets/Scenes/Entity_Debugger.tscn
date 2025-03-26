@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://df15eyp0ekksp"]
 
 [ext_resource type="Theme" uid="uid://h10awbykqga4" path="res://addons/arch_entity_debugger/Assets/Theme_EntityViewer.tres" id="1_a6t8t"]
-[ext_resource type="Script" path="res://addons/arch_entity_debugger/Scripts/EntityDebugger.cs" id="2_13hsi"]
+[ext_resource type="Script" uid="uid://ng7p87oocerj" path="res://addons/arch_entity_debugger/Scripts/EntityDebugger.cs" id="2_13hsi"]
 [ext_resource type="PackedScene" uid="uid://5dmngx31bwl" path="res://addons/arch_entity_debugger/Assets/Scenes/Entity_Debugger_Panel.tscn" id="3_cou3l"]
 
 [node name="Entity Debugger" type="Control" node_paths=PackedStringArray("debugWindow")]

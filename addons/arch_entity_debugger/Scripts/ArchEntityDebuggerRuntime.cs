@@ -17,6 +17,10 @@ public partial class ArchEntityDebuggerRuntime : Node
 
     public override void _Process(double delta)
     {
+        if (System.Diagnostics.Debugger.IsAttached)
+            return;
+
+
         if (World.WorldSize == 0)
         {
             return;
